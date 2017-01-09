@@ -15,6 +15,12 @@
 	<dependencies>
 
 		<dependency>
+			<groupId>com.taotao.common</groupId>
+			<artifactId>taotao-common</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.taotao.manage</groupId>
 			<artifactId>taotao-manage-pojo</artifactId>
 			<version>0.0.1-SNAPSHOT</version>

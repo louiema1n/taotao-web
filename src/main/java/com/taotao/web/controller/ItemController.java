@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.taotao.manage.pojo.Item;
+import com.taotao.manage.pojo.ItemDesc;
+import com.taotao.web.bean.Item;
 import com.taotao.web.service.ItemService;
 
 @Controller
@@ -22,6 +23,10 @@ public class ItemController {
         ModelAndView mv = new ModelAndView("item");
         Item item = this.itemService.queryItemById(itemId);
         mv.addObject("item", item);
+        
+        // 商品描述
+        ItemDesc itemDesc = this.itemService.queryItemDescById(itemId);
+        mv.addObject("itemDesc", itemDesc);
         return mv;
     }
 
