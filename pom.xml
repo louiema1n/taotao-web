@@ -13,6 +13,13 @@
 
 	<!-- 依赖 -->
 	<dependencies>
+
+		<dependency>
+			<groupId>com.taotao.manage</groupId>
+			<artifactId>taotao-manage-pojo</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- 单元测试 -->
 		<dependency>
 			<groupId>junit</groupId>
