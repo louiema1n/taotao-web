@@ -17,6 +17,12 @@ public class ItemCacheController {
     @Autowired
     private ItemCacheService itemCacheService;
 
+    /**
+     * 接收itemId，删除缓存
+     * 
+     * @param itemId
+     * @return
+     */
     @RequestMapping(value = "{itemId}", method = RequestMethod.POST)
     public ResponseEntity<Void> delCache(@PathVariable("itemId") Long itemId) {
         try {
